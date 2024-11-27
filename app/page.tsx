@@ -2,6 +2,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 // Dynamically load AnimatedWord without SSR
 const AnimatedWord = dynamic(() => import("./components/AnimatedWord"), {
@@ -9,7 +11,11 @@ const AnimatedWord = dynamic(() => import("./components/AnimatedWord"), {
 });
 
 const Home: React.FC = () => {
-  return <AnimatedWord text="MARINA" />;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default Home;

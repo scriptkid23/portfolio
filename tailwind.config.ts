@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        polySans: ["var(--font-polySans)"],
+        inter: ["var(--font-inter)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
