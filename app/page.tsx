@@ -14,6 +14,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Navbar />
+      <Main />
     </div>
   );
 };
